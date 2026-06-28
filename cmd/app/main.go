@@ -11,7 +11,7 @@ import (
 
 	"sitepulse/internal/infrastructure/netclient"
 	"sitepulse/internal/repository/postgres"
-	"sitepulse/internal/usercase"
+	"sitepulse/internal/usecase"
 	"sitepulse/internal/worker"
 
 	_ "github.com/lib/pq"
