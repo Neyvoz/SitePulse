@@ -14,13 +14,13 @@ const (
 )
 
 type SchedulerCmd struct {
-	Type              CmdType
-	CmdAdd            string
-	CmdRemove         time.Duration
-	CmdUpdateInterval *Target
+	Type     CmdType
+	TargetID int64
+	Interval time.Duration
+	Target   *Target
 }
 
 type TickerEntry struct {
-	ticker *time.Ticker
-	cancel context.CancelFunc
+	Ticker *time.Ticker
+	Cancel context.CancelFunc
 }
